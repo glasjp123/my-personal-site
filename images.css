@@ -75,6 +75,8 @@
 }
 
 .page-body__heading {
+	position: relative;
+	left: 30px;
 	text-decoration: underline;
 	text-shadow: .5px .5px .5px #6f6f6f;
 }
@@ -94,45 +96,4 @@
 	padding-top: 10px;
 	position: relative;
 	left: -10px;
-}
-/****************************************END OF MOBILE STYLES******************************************/
-@media all and (min-width: 960px){
-
-
-.nav-bar {
-	border: 1px solid lightgray;
-	left: 17.5%;
-	top: 10px;
-	background: white;
-	width: 900px;
-}
-
-.nav-bar__border {
-	display: none;
-}
-
-.nav-bar__image {
-	left: 18%;
-	top: 16px;
-}
-
-.page-body__image {
-	box-shadow: 1px 1px 2px #6f6f6f;
-	position: relative;
-	left: 40%;
-	top: 100px;
-	height: 300px;
-	width: auto;
-}
-
-.page-body__text {
-	text-align: center;
-	margin: 50px 200px;
-	top: 20px;
-	left: -20px;
-}
-
-.page-body__list {
-	list-style: none;
-
 }
