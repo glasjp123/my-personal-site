@@ -1,6 +1,10 @@
+body {
+	background: #9bc1ff;
+}
+
 .nav-bar {
 	height: 35px;
-	width: 320px;
+	width: 320px;	
 	background: white;
 	position: fixed;
 	left: -5px;
@@ -50,11 +54,7 @@
 .nav-bar__list a:hover {
 	color: black;
 	cursor: pointer;
-	transition-duration: 300ms; 
-}
-
-.nav-bar__list a:visited {
-	color: black;
+	transition-duration: 1s; 
 }
 
 .nav-bar__items {
@@ -76,24 +76,63 @@
 
 .page-body__heading {
 	position: relative;
-	left: 30px;
+	left: 50px;
 	text-decoration: underline;
 	text-shadow: .5px .5px .5px #6f6f6f;
 }
 
-.page-body__text {
+.page-body__text {	
 	font-family: 'Lora', serif;
 	padding: 20px 25px;
 	position: relative;
 	left: 15px;
 }
 
-.page-body__list {
-	list-style: square;
+.page-body__gallery_top {
+	border-radius: 2%;	
+	position: relative;
+	left: 10%;	
+	z-index: -1;	
 }
 
-.page-body__li {
-	padding-top: 10px;
+.page-body__gallery_image {
+	border-radius: 50%;
+	height: 150px;	
+	width: auto;
 	position: relative;
-	left: -10px;
+	left: 10%;
+	z-index: -1;	
+	padding-top: 5px;
 }
+/****************************************END OF MOBILE STYLES******************************************/
+@media all and (min-width: 960px){
+
+
+.nav-bar {
+	border: 1px solid lightgray;
+	left: 17.5%;
+	top: 10px;
+	background: white;
+	width: 900px;
+}
+
+.nav-bar__border {
+	display: none;
+}
+
+.nav-bar__image {
+	left: 18%;
+	top: 16px;
+}
+
+.page-body__heading {
+	left: 0px;
+}
+
+.page-body__text {
+	text-align: center;
+	margin: 50px 200px;
+	top: 20px;
+	left: -20px;
+}
+
