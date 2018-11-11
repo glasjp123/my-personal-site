@@ -22,11 +22,33 @@
 			</ol>
 		</nav>
 	</div>
-
 	<div class="page-body">
+		<div class="page-body">
+			<h2 class="page-body__heading">Contact ME</h2>
+			<div class="container">
+				  <form action="action_page.php">
 
-		<div class="page-body__text">
-			<h2 class="page-body__heading">Welcome to my site!</h2>
-	</div>
+				    <label for="fname">First Name</label>
+				    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+				    <label for="lname">Last Name</label>
+				    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+				    <label for="country">Country</label>
+				    <select id="country" name="country">
+				      <option value="australia">Australia</option>
+				      <option value="canada">Canada</option>
+				      <option value="usa">USA</option>
+				    </select>
+
+				    <label for="subject">Subject</label>
+				    <textarea id="subject" name="subject" placeholder="Leave a message!"></textarea>
+
+				    <input type="submit" value="Submit">
+
+				  </form>
+			</div>
+
+		</div>
 </body>
 </html>
