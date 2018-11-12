@@ -12,7 +12,7 @@ body {
 	border-bottom: 1px solid lightgray;
 	box-shadow: 0px 15px 10px -15px #6F6F6F;
 	opacity: .95;
-	z-index: 1;
+	z-index: 2;
 }
 
 .nav-bar__border {
@@ -25,7 +25,7 @@ body {
 	border-bottom: 1px solid lightgray;
 	border-left: 0px;
 	box-shadow: 0px 15px 5px -15px #6F6F6F;
-	z-index: 0;
+	z-index: 1;
 }
 
 .nav-bar__image {
@@ -34,7 +34,7 @@ body {
 	position: fixed;
 	top: 9px;
 	left: 10px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .nav-bar__list {
@@ -75,38 +75,62 @@ body {
 }
 
 .page-body__heading {
-	position: relative;
-	left: 50px;
-	text-decoration: underline;
-	text-shadow: .5px .5px .5px #6f6f6f;
-}
-
-.page-body__text {	
 	font-family: 'Lora', serif;
 	padding: 20px 25px;
 	position: relative;
-	left: 15px;
+	left: 12.5%;
+	top: 10px;
+	text-decoration: underline;
+	text-shadow: .5px .5px .5px #6f6f6f;
+}
+	
+.page-body__gallery-top-box {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
 }
 
-.page-body__gallery_top {
+.page-body__gallery-top {
 	border-radius: 2%;	
 	position: relative;
-	left: 10%;	
+	margin-left: 10%;
+	margin-right: 25%;
+	margin-top: 20px;
+	left: 7.5%;	
+	height: auto;
+	width: 200px;	
 	z-index: -1;	
 }
 
-.page-body__gallery_image {
+.page-body__bottom-heading {
+	font-family: 'Lora', serif;
+	text-decoration: underline;
+	position: relative;
+	left: 40px;
+}
+
+.page-body__gallery-bottom-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	left: 2.5%;
+}
+
+.page-body__gallery-bottom {
 	border-radius: 50%;
+	margin-right: 2px;
+	margin-top: 10px;
+	padding-top: 5px;
+	position: relative;
 	height: 150px;	
 	width: auto;
-	position: relative;
-	left: 10%;
 	z-index: -1;	
-	padding-top: 5px;
 }
-/****************************************END OF MOBILE STYLES******************************************/
-@media all and (min-width: 960px){
 
+/****************************************END OF MOBILE STYLES******************************************/
+
+@media all and (min-width: 960px){
 
 .nav-bar {
 	border: 1px solid lightgray;
@@ -126,7 +150,9 @@ body {
 }
 
 .page-body__heading {
-	left: 0px;
+	text-align: center;	
+	left: -25px;
+	top: 50px;	
 }
 
 .page-body__text {
@@ -136,3 +162,26 @@ body {
 	left: -20px;
 }
 
+.page-body__gallery-top {
+	width: 400px;
+	margin-top: 75px;
+	left: 24%;	
+}
+
+.page-body__bottom-heading {	
+	left: 41%;
+	top: 50px;
+}
+
+.page-body__gallery-bottom-box {
+	justify-content: center;
+	max-width: 800px;
+	left: 22%;
+	top: 50px;
+}
+
+.page-body__gallery-bottom {
+	margin-right: 50px;
+	margin-top: 25px;
+	height: 200px;
+}

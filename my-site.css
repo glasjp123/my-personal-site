@@ -1,3 +1,36 @@
+body {
+	background: #8ba2c1;
+}
+
+.page-top {
+	background: white;
+	background-image: linear-gradient(white,#77b1ff);
+	position: absolute;
+	top: 0px;
+	height: 100px;
+	width: 320px;
+}
+
+.page-top__background {
+	background: #77b1ff;
+	background-image: linear-gradient rgba(0,0,0,255);
+	position: absolute;
+	top: 75px;
+	height: 100px;
+	width: 320px;
+	z-index: -1;
+}
+
+.page-top__background-bottom {
+	display: none;
+	background: white;
+	background-image: linear-gradient(#77b1ff,white);
+	position: relative;
+	top: 175px;
+	height: 100px;
+	width: 320px;
+}
+
 .nav-bar {
 	height: 35px;
 	width: 320px;
@@ -8,7 +41,7 @@
 	border-bottom: 1px solid lightgray;
 	box-shadow: 0px 15px 10px -15px #6F6F6F;
 	opacity: .95;
-	z-index: 1;
+	z-index: 2;
 }
 
 .nav-bar__border {
@@ -30,7 +63,7 @@
 	position: fixed;
 	top: 9px;
 	left: 10px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .nav-bar__list {
@@ -63,11 +96,19 @@
 
 .page-body__image {
 	border-radius: 20%;
+	box-shadow: 3px 3px 50px #abaeb2;
 	position: relative;
 	left: 15%;
 	top: 20px;
 	height: 70%;
 	width: 70%;
+}
+
+.page-body__text-container {
+	background: black;
+
+	color: white;
+	width: 320px;	
 }
 
 .page-body__heading {
@@ -79,7 +120,8 @@
 	font-family: 'Lora', serif;
 	padding: 20px 25px;
 	position: relative;
-	left: 15px;
+	left: 5px;
+	z-index: 1;
 }
 
 .page-body__list {
@@ -94,11 +136,26 @@
 /****************************************END OF MOBILE STYLES******************************************/
 @media all and (min-width: 960px){
 
+.page-top {
+	width: 1024px;
+	left: 195px;
+}
+
+.page-top__background {
+	width: 1024px;
+}
+
+.page-top__background-bottom {
+	display: inline-block;
+	height: 300px;
+	width: 1024px;
+}
 
 .nav-bar {
 	border: 1px solid lightgray;
+	box-shadow: 0px 15px 10px -15px black;
 	left: 17.5%;
-	top: 10px;
+	top: 5px;
 	background: white;
 	width: 900px;
 }
@@ -109,26 +166,33 @@
 
 .nav-bar__image {
 	left: 18%;
-	top: 16px;
+	top: 12px;
 }
 
 .page-body__image {
-	box-shadow: 1px 1px 2px #6f6f6f;
+	border-radius: 5%;
+	box-shadow: 1px 1px 100px #6f6f6f;
 	position: relative;
-	left: 40%;
-	top: 100px;
+	left: 36%;
+	top: 75px;
 	height: 300px;
 	width: auto;
+	z-index: 1;
+}
+
+.page-body__text-container {
+	position: relative;	
+	left: 187px;
+	width: 1024px;
 }
 
 .page-body__text {
 	text-align: center;
 	margin: 50px 200px;
 	top: 20px;
-	left: -20px;
 }
 
 .page-body__list {
 	list-style: none;
-
+}
 }
